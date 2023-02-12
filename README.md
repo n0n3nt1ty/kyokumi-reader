@@ -1,15 +1,16 @@
 ![logo kyokumi](https://user-images.githubusercontent.com/82025684/218324344-f7464615-a391-4f36-ae68-0c0462d99250.png)
 
 # Kyokumi Reader
-Simple and powerful e-book reader
+Simple, free and powerful e-book reader.
 ## Features
-- Simple design to avoid distractions while reading
+- Simple, minimalistic design to avoid distractions while reading
 - Fast and lightweight
 - Supports .fb2 and .html
 - Fullscreen mode
 
 ## Download for Windows
 Download latest stable version [here](https://github.com/n0n3nt1ty/Kyokumi-Reader/releases/).
+V. 1.0. **ISSUE: Must be opened with administrator priviliges, otherwise cannot access its files in Program Files folder. Will be fixed in the next update.**
 
 ## License
 Do not distribute, copy, modify, sell or reverse-engineer this software without author's agreement.
