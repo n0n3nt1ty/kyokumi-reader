@@ -8,4 +8,5 @@ Simple and powerful e-book reader
 - Supports .fb2 and .html
 - Fullscreen mode
 
-
+## Download for Windows
+Download latest stable version [here](https://pages.github.com/).
