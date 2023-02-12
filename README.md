@@ -9,4 +9,8 @@ Simple and powerful e-book reader
 - Fullscreen mode
 
 ## Download for Windows
-Download latest stable version [here](https://pages.github.com/).
+Download latest stable version [here](https://github.com/n0n3nt1ty/Kyokumi-Reader/releases/).
+
+## License
+Do not distribute, copy, modify, sell or reverse-engineer this software without author's agreement.
+Source code and executable files (C) 2023 n0nentity (https://github.com/n0n3nt1ty). All rights reserved.
