@@ -14,6 +14,7 @@ Download latest stable version [here](https://github.com/n0n3nt1ty/Kyokumi-Reade
 **V. 1.0. ISSUE: Must be opened with administrator priviliges, otherwise cannot access its files in Program Files folder. Will be fixed in the next update.**
 
 ## License
+Feel free to use this software on your PC for personal use. This is the only offical source of this software.
 Do not distribute, copy, modify, sell or reverse-engineer this software without author's agreement.
 Source code is provided for view only.
 Source code and executable files (C) 2023 n0nentity (https://github.com/n0n3nt1ty). All rights reserved.
