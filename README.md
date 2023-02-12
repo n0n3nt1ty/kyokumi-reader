@@ -1,5 +1,5 @@
+![logo kyokumi](https://user-images.githubusercontent.com/82025684/218324344-f7464615-a391-4f36-ae68-0c0462d99250.png)
 
-![logo kyokumi](https://user-images.githubusercontent.com/82025684/218324275-96df9b4e-0cef-4136-8bc1-ffc87121a595.png)
 # Kyokumi Reader
 Simple and powerful e-book reader
 ## Features
