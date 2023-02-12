@@ -1,0 +1,24 @@
+p {
+	color: white;
+	font-family: 'Libre Baskerville', serif;
+	font-size: 36px;
+}
+
+h1 {
+	color: #00A1DA;
+	font-family: 'Libre Baskerville', serif;
+}
+
+body {
+	background-color: #001629;
+}
+}
+
+tab {
+    tab-size: 8;
+    }
+
+strong {
+	color: #00A1DA;
+	font-family: 'Libre Baskerville', serif;
+}
