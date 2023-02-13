@@ -13,8 +13,6 @@ Simple, free and powerful e-book reader.
 ## Download for Windows
 Download latest stable version [here](https://github.com/n0n3nt1ty/Kyokumi-Reader/releases/).
 
-**V. 1.0. ISSUE: Must be opened with administrator priviliges, otherwise cannot access its files in Program Files folder. Will be fixed in the next update.**
-
 ## License
 Feel free to use this software on your PC for personal use. This is the only offical source of this software.
 Do not distribute, copy, modify, sell or reverse-engineer this software without author's agreement.
