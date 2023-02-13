@@ -8,6 +8,8 @@ Simple, free and powerful e-book reader.
 - Supports .fb2 and .html
 - Fullscreen mode
 
+![image](https://user-images.githubusercontent.com/82025684/218446691-24cfc58f-111e-470b-8248-6d4e96f8c1a3.png)
+
 ## Download for Windows
 Download latest stable version [here](https://github.com/n0n3nt1ty/Kyokumi-Reader/releases/).
 
