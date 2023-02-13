@@ -1,12 +1,4 @@
-/*
-Do not distribute, copy, modify, sell or reverse-engineer
-this software without author's agreement.
-Source code is provided for view only.
-Source code and executable files
-(C) 2023 n0nentity (https://github.com/n0n3nt1ty).
-All rights reserved.
-*/
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;

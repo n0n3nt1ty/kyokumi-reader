@@ -1,12 +1,4 @@
-/*
-Do not distribute, copy, modify, sell or reverse-engineer
-this software without author's agreement.
-Source code is provided for view only.
-Source code and executable files
-(C) 2023 n0nentity (https://github.com/n0n3nt1ty).
-All rights reserved.
-*/
-namespace EBook_Reader_by_purplerain
+﻿namespace EBook_Reader_by_purplerain
 {
     partial class about
     {
@@ -56,7 +48,7 @@ namespace EBook_Reader_by_purplerain
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(161)))), ((int)(((byte)(218)))));
             this.panel1.Controls.Add(this.label1);
-            this.panel1.Location = new System.Drawing.Point(12, 177);
+            this.panel1.Location = new System.Drawing.Point(12, 168);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(343, 26);
             this.panel1.TabIndex = 0;
@@ -66,11 +58,11 @@ namespace EBook_Reader_by_purplerain
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(22)))), ((int)(((byte)(41)))));
-            this.label1.Location = new System.Drawing.Point(76, 1);
+            this.label1.Location = new System.Drawing.Point(54, 1);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(212, 24);
+            this.label1.Size = new System.Drawing.Size(231, 24);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Kyokumi Reader 1.0";
+            this.label1.Text = "Kyokumi Reader  v1.1";
             // 
             // pictureBox1
             // 

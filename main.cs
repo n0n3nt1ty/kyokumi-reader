@@ -1,12 +1,4 @@
-/*
-Do not distribute, copy, modify, sell or reverse-engineer
-this software without author's agreement.
-Source code is provided for view only.
-Source code and executable files
-(C) 2023 n0nentity (https://github.com/n0n3nt1ty).
-All rights reserved.
-*/
-using System;
+﻿using System;
 using System.ComponentModel;
 using System.IO;
 using System.Runtime.Remoting.Contexts;
@@ -17,19 +9,24 @@ namespace EBook_Reader_by_purplerain
 {
     public partial class main : Form
     {
+        public string bookText;
+        public string formattedText;
+        public string selectedFile;
+        public string myDocuments = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
+        public string folderName = "Kyokumi Reader";
         public main()
         {
             InitializeComponent();
         }
 
-        public string bookText;
-        public string formattedText;
-        public string selectedFile;
+        
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            string curDir = Directory.GetCurrentDirectory();
-            webBrowser1.Url = new Uri(String.Format("file:///{0}/html_templates/start.html", curDir));
+            string localData = Path.Combine(myDocuments, folderName);
+            Directory.CreateDirectory(localData);
+
+            webBrowser1.Url = new Uri (String.Format("file:///{0}/html_templates/start.html", localData));
             webBrowser1.ScrollBarsEnabled = true;
             Console.WriteLine("Debug output console OK.");
         }
@@ -97,18 +94,21 @@ namespace EBook_Reader_by_purplerain
         {
             bookText = File.ReadAllText(selectedFile);
             // After finishing, write to file
-            string curDir = Directory.GetCurrentDirectory();
-            File.WriteAllText(String.Format("{0}/html_templates/book.html", curDir), bookText);
+            string localData = Path.Combine(myDocuments, folderName);
+            Directory.CreateDirectory(localData);
+            File.WriteAllText(String.Format("{0}/html_templates/book.html", localData), bookText);
             // Load the file to the web browser
-            webBrowser1.Url = new Uri(String.Format("file:///{0}/html_templates/book.html", curDir));
+            webBrowser1.Url = new Uri(String.Format("file:///{0}/html_templates/book.html", localData));
 
         }
         private void fb2Render()
         {
             bool skipTagContent = false;    // If the tag is omitted, the content of the tag will not be printed
+            formattedText = "";
             XmlTextReader xmlReader = new XmlTextReader(openFileDialog1.FileName);
             // Add HTML template code
             formattedText = formattedText + "<!DOCTYPE html>\r\n<html lang=\"en\">\r\n<head>\r\n  <meta charset=\"utf-8\">\r\n  <title></title>\r\n  <link href=\"default.css\" rel=\"stylesheet\" />\r\n</head>\r\n<body style=\"overflow:auto;\">";
+            
             while (xmlReader.Read())
             {
                 switch (xmlReader.NodeType)
@@ -220,11 +220,18 @@ namespace EBook_Reader_by_purplerain
             // Add last lines of HTML template
             formattedText = formattedText + "</body>\r\n</html>";
             // After finishing, write to file
-            string curDir = Directory.GetCurrentDirectory();
-            File.WriteAllText(String.Format("{0}/html_templates/book.html", curDir), formattedText);
-
+            string localData = Path.Combine(myDocuments, folderName);
+            Directory.CreateDirectory(localData);
+            try
+            {
+                File.WriteAllText(String.Format("{0}/html_templates/book.html", localData), formattedText, System.Text.Encoding.UTF8);
+            } catch (Exception ex)
+            {
+                MessageBox.Show("An error occured. \n" + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            
             // Load the file to the web browser
-            webBrowser1.Url = new Uri(String.Format("file:///{0}/html_templates/book.html", curDir));
+            webBrowser1.Navigate(new Uri(String.Format("file:///{0}/html_templates/book.html", localData)));
             this.Text = "Kyokumi Reader - " + selectedFile;
         }
 
